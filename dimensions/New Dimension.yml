@@ -1,0 +1,20 @@
+unique_name: New Dimension
+object_type: dimension
+label: New Dimension
+hierarchies:
+  - unique_name: Product Dimension
+    label: Product Dimension
+    folder: Product
+    levels:
+      - unique_name: Eng. Product Name
+level_attributes:
+  - unique_name: Eng. Product Name
+    label: Eng. Product Name
+    contains_unique_names: false
+    dataset: DIMPRODUCT
+    folder: Product
+    is_unique_key: false
+    key_columns:
+      - productkey
+    name_column: englishproductname
+type: standard

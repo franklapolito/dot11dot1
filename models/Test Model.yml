@@ -1,0 +1,15 @@
+unique_name: Test Model
+object_type: model
+label: Test Model
+dimensions: []
+metrics:
+  - unique_name: m_FACTINTERNETSALES_unitprice_avg
+relationships:
+  - unique_name: FACTINTERNETSALES_productkey_to_Product Dimension_Eng. Product Name
+    from:
+      dataset: FACTINTERNETSALES
+      join_columns:
+        - productkey
+    to:
+      dimension: Product Dimension
+      level: Eng. Product Name
